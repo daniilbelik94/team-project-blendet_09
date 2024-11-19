@@ -1,0 +1,153 @@
+/* Fonts */
+
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/poppins-v21-latin-300.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/poppins-v21-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/poppins-v21-latin-500.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/poppins-v21-latin-600.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/montserrat-v26-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/montserrat-v26-latin-600.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/montserrat-v26-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Impact Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/impact.woff') format('woff');
+}
+
+/* Reset styles */
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: #242424;
+  background-color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --text: #292929;
+  --accent-green: #00b068;
+  --white: #f0f0f0;
+  --light-grey: #e4e5e6;
+  --light-accent: #bcdfd1;
+  --green-hero-hover: rgba(0, 176, 104, 0.6);
+  --background-work-together-backdrop: rgba(41, 41, 41, 0.8);
+  --gray-visit-hover: #bbb;
+  --hover-effect: cubic-bezier(0.4, 0, 0.2, 1);
+  --reviews-slider-btn-border: #bfbfbf;
+}
+
+body {
+  margin: 0;
+  background-color: var(--white);
+  color: var(--text);
+  font-family: 'Poppins';
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  line-height: 1.5;
+  transition: background-color 0.2s var(--hover-effect);
+  overflow-x: hidden;
+}
+
+.dark-theme {
+  --text: #f0f0f0;
+  --accent-green: #14c57c;
+  --white: #1e2023;
+  --light-grey: #2a2d32;
+  --light-accent: #204136;
+  --green-hero-hover: rgba(20, 197, 124, 0.6);
+  --background-work-together-backdrop: rgba(30, 32, 35, 0.8);
+  --gray-visit-hover: #3b3f45;
+  --reviews-slider-btn-border: #2a2d32;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
