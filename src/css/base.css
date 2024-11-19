@@ -2,6 +2,16 @@ html {
   scroll-behavior: smooth;
 }
 
+body.dark-theme {
+  background-color: #2a2d32;
+  color: #ffffff;
+}
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
 .section {
   padding-bottom: 80px;
 }
