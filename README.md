@@ -40,10 +40,11 @@
 Цей проєкт є результатом спільних зусиль нашої талановитої команди:
 
 - **Teamlead**: [Daniil Belik](https://github.com/daniilbelik94) | Section: ;
-- **Teamlead**: [Roman Belyaev](https://github.com/daniilbelik94) | Section: Header ;
+- **Front-End Developer**: [Roman Belyaev](https://github.com/daniilbelik94) | Section: Header ;
+- **Front-End Developer**: [Tetiana Korkh](https://github.com/Tetiana1104) | Section: Hero;
 - **Front-End Developer**: [Svitlana Fedorova](https://github.com/lana150) | Section: About Me;
 - **Front-End Developer**: [Oleksandra Voronkina](https://github.com/Alexandra0707) | Section: FAQ;
-- **Front-End Developer**: [Tetiana Korkh](https://github.com/Tetiana1104) | Section: Hero;
+
 - **Front-End Developer**: [Sveta Palyh](https://github.com/Svetakler) | Section: Tech Skills;
 - **Front-End Developer**: [Bohdana Skolzaieva](https://github.com/Bohdana-Skolzaieva-3101) | Section: Footer;
 
