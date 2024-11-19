@@ -39,7 +39,7 @@
 
 Цей проєкт є результатом спільних зусиль нашої талановитої команди:
 
-- **Teamlead**: [Daniil Belik](https://github.com/daniilbelik94) | Section: ;
+- **Team Lead**: [Daniil Belik](https://github.com/daniilbelik94) | Section: ;
 - **Front-End Developer**: [Roman Belyaev]( https://github.com/Plane-Jumper5) | Section: Header ;
 - **Front-End Developer**: [Tetiana Korkh](https://github.com/Tetiana1104) | Section: Hero;
 - **Front-End Developer**: [Svitlana Fedorova](https://github.com/lana150) | Section: About Me;
