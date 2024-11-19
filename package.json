@@ -1,11 +1,11 @@
 {
-  "name": "vanilla-app-template",
+  "name": "team-project-blendet_09",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/vanilla-app-template/",
+    "build": "vite build --base=/team-project-blendet_09/",
     "preview": "vite preview"
   },
   "devDependencies": {
@@ -17,6 +17,11 @@
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "accordion-js": "^3.3.4",
+    "axios": "^1.7.7",
+    "gsap": "^3.12.5",
+    "izitoast": "^1.4.0",
+    "swiper": "^11.1.15",
     "vite-plugin-full-reload": "^1.2.0",
     "vite-plugin-html-inject": "^1.1.2"
   }

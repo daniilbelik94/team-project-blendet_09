@@ -1,23 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/light-favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <meta name="description" content="Lloyd Jefferson portfolio website. 
+      The site includes a photo, bio, technical and software skills, projects, 
+      and contact information for getting in touch with the mr. Jefferson." />
+    <title>Lloyd Jefferson</title>
     <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
+</head>
 
+<body>
+    <load src="partials/header.html" />
     <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
+
+        <load src="partials/hero.html" />
+
+        <load src="partials/about-me.html" />
+
+        <load src="partials/tech-skills.html" />
+
+        <load src="partials/my-projects.html" />
+
+        <load src="partials/benefits.html" />
+
+        <load src="partials/faq.html" />
+
+        <load src="partials/reviews.html" />
+
+        <load src="partials/work-together.html" />
     </main>
-
-    <load src="./partials/footer.html" />
-
+    <load src="partials/footer.html" />
     <script type="module" src="./main.js"></script>
-  </body>
+</body>
+
 </html>
