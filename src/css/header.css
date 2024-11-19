@@ -1,0 +1,57 @@
+.header {
+  padding: 20px 0;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Theme checkbox  */
+/* dont tuch it! */
+
+
+.theme-checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  width: 48px;
+  height: 24px;
+  cursor: pointer;
+  background-color: #e4e5e6;
+  border-radius: 16px;
+  transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.theme-checkbox::before,
+.theme-checkbox::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.theme-checkbox::before {
+  background-color: #2a2d32;
+  opacity: 0;
+}
+.theme-checkbox::after {
+  background-color: #00b068;
+}
+.theme-checkbox:checked {
+  background-color: #2a2d32;
+}
+.theme-checkbox:checked::before {
+  transform: translateX(calc(80%));
+  background-color: #2a2d32;
+  opacity: 1;
+  z-index: 10;
+}
+.theme-checkbox:checked::after {
+  transform: translateX(calc(100% + 3px));
+}
+
+/* Пиши стили для хеддера и мобильного меню после этого комментария */
