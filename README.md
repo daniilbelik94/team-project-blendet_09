@@ -45,7 +45,7 @@
 - **Front-End Developer**: [Svitlana Fedorova](https://github.com/lana150) | Section: About Me;
 - **Front-End Developer**: [Sveta Palyh](https://github.com/Svetakler) | Section: Tech Skills;
 - **Front-End Developer**: [Oleksandra Voronkina](https://github.com/Alexandra0707) | Section: FAQ;
-- **Front-End Developer**: [Anzhelika Kondakova](https://github.com/anzheliketta) | Section: Review;
+- **Front-End Developer**: [Anzhelika Kondakova](https://github.com/anzheliketta) | Section: Reviews;
 - **Front-End Developer**: [Bohdana Skolzaieva](https://github.com/Bohdana-Skolzaieva-3101) | Section: Footer;
 
 
