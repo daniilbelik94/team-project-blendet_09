@@ -1,7 +1,7 @@
 'use strict';
 
-const lightFavicon = './light-favicon.svg';
-const darkFavicon = './dark-favicon.svg';
+const lightFavicon = 'light-favicon.svg';
+const darkFavicon = 'dark-favicon.svg';
 
 const checkboxEl = document.querySelector('.theme-checkbox');
 const bodyEl = document.querySelector('body');
