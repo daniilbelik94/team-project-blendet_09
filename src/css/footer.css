@@ -28,13 +28,13 @@
     width: 100%;
     background-color: #00B068;
     border-radius: 5px 5px 0 0;
-    transform: scaleX(0); /* Начальная ширина 0% */
+    transform: scaleX(0); 
     transform-origin: left; /* Точка начала трансформации - левый край */
     transition: transform 0.40s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-link:hover:after {
-    transform: scaleX(0.75); /* Увеличение ширины до 100% */
+    transform: scaleX(0.75); /* Увеличение ширины до 75% */
 }
 
 
