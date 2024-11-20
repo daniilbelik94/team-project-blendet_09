@@ -6,23 +6,22 @@
   align-items: center;
   justify-content: space-between;
 }
+.header-logo {
+  font-family: 'Impact', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text);
+}
 
+.header-logo span {
+  color: var(--accent-green);
+}
 /* Theme checkbox  */
 /* dont tuch it! */
 
-
-.theme-checkbox {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  position: relative;
-  width: 48px;
-  height: 24px;
-  cursor: pointer;
-  background-color: #e4e5e6;
-  border-radius: 16px;
-  transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-}
 .theme-checkbox::before,
 .theme-checkbox::after {
   content: '';
@@ -54,4 +53,30 @@
   transform: translateX(calc(100% + 3px));
 }
 
+.theme-checkbox {
+  /* Стили чекбокса */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  width: 48px;
+  height: 24px;
+  cursor: pointer;
+  background-color: #e4e5e6;
+  border-radius: 16px;
+  transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1; /* Добавляем z-index, чтобы элемент был выше остальных */
+}
+
+@media screen and (min-width: 768px) {
+  .theme-checkbox {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .theme-checkbox {
+
+    margin: 0 auto;
+  }
+}
 /* Пиши стили для хеддера и мобильного меню после этого комментария */

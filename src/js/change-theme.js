@@ -1,18 +1,18 @@
 'use strict';
 
-const lightFavicon = '/light-favicon.svg';
-const darkFavicon = '/dark-favicon.svg';
+import lightFavicon from '/public/light-favicon.svg';
+import darkFavicon from '/public/dark-favicon.svg';
 
 const checkboxEl = document.querySelector('.theme-checkbox');
 const bodyEl = document.querySelector('body');
 const faviconEl = document.querySelector('link[rel="icon"]');
 
-const prefersDarkTheme = window.matchMedia('(prefers-color-scheme: dark)');
+let isDarkThemeActive = false;
 const savedTheme = localStorage.getItem('dark-theme');
 
-// Функция для применения темы
-const applyTheme = (isDark) => {
-  if (isDark) {
+// Функция для применения темы при загрузке страницы
+function applySavedTheme() {
+  if (savedTheme === 'true') {
     bodyEl.classList.add('dark-theme');
     faviconEl.href = darkFavicon;
     checkboxEl.checked = true;
@@ -21,31 +21,21 @@ const applyTheme = (isDark) => {
     faviconEl.href = lightFavicon;
     checkboxEl.checked = false;
   }
-};
+}
 
+// Применить сохранённую тему при загрузке страницы
+applySavedTheme();
 
-const initializeTheme = () => {
-  if (savedTheme !== null) {
-    // Используем сохраненную тему
-    applyTheme(savedTheme === 'true');
-  } else {
-    // Применяем системную тему
-    applyTheme(prefersDarkTheme.matches);
-  }
-};
-
+// Обработчик события для переключения темы
 checkboxEl.addEventListener('change', () => {
-  const isDark = checkboxEl.checked;
-  localStorage.setItem('dark-theme', isDark);
-  applyTheme(isDark);
-});
+  bodyEl.classList.toggle('dark-theme');
+  isDarkThemeActive = !isDarkThemeActive;
 
-prefersDarkTheme.addEventListener('change', (event) => {
-  const isDark = event.matches;
-
-  if (!savedTheme) {
-    applyTheme(isDark);
+  if (isDarkThemeActive) {
+    localStorage.setItem('dark-theme', 'true');
+    faviconEl.href = darkFavicon;
+  } else {
+    localStorage.removeItem('dark-theme');
+    faviconEl.href = lightFavicon;
   }
 });
-
-initializeTheme();

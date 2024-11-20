@@ -53,6 +53,8 @@
   max-width: 100%;
   width: 100%;
 }
+
+
 .work-together-input:hover,
 .work-together-message:hover {
   box-shadow: 1px 1px 3px rgb(169, 169, 169);
@@ -81,6 +83,7 @@
 .work-together-input::placeholder,
 .work-together-message::placeholder {
   color: var(--Black, #292929);
+  color: var(--text);
   opacity: 0.4;
 
   line-height: 1.5;
