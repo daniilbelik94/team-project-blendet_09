@@ -23,6 +23,7 @@
     "gsap": "^3.12.5",
     "izitoast": "^1.4.0",
     "modern-normalize": "^3.0.1",
+    "split-type": "^0.3.4",
     "swiper": "^11.1.15",
     "vite-plugin-full-reload": "^1.2.0",
     "vite-plugin-html-inject": "^1.1.2"
