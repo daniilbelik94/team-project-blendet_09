@@ -65,7 +65,7 @@
   background-color: #e4e5e6;
   border-radius: 16px;
   transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  z-index: 1; /* Добавляем z-index, чтобы элемент был выше остальных */
+  z-index: 1; 
 }
 
 @media screen and (min-width: 768px) {

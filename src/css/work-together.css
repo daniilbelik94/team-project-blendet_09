@@ -93,11 +93,11 @@
   background-color: var(--accent-green);
   border: none;
   border-radius: 10px;
-  color: var(--white);
+  color: #F0F0F0;
   height: 48px;
-  
   transition: all 0.4s ease;
 }
+
 .work-together-submit:hover,
 .work-together-submit:focus {
   background-color: rgba(0, 145, 86, 1);
@@ -278,7 +278,8 @@
     margin-bottom: 0;
   }
   .work-together-link {
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 300;
   }
   .work-together-section-left {
     margin-bottom: 0;
