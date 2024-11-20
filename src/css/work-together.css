@@ -80,7 +80,7 @@
 }
 .work-together-input::placeholder,
 .work-together-message::placeholder {
-  color: var(--text);
+  color: var(--Black, #292929);
   opacity: 0.4;
 
   line-height: 1.5;
@@ -92,6 +92,7 @@
   border-radius: 10px;
   color: var(--white);
   height: 48px;
+  
   transition: all 0.4s ease;
 }
 .work-together-submit:hover,
@@ -237,8 +238,8 @@
   .work-together-item {
     gap: 19px;
   }
-  .work-together-sumbit {
-    max-width: 173px;
+  .work-together-submit {
+    width: 173px;
   }
   .work-together-modal {
     width: 492px;
@@ -290,10 +291,7 @@
   .work-together-input {
     width: 592px;
   }
-}
-.bar {
-  width:3px;
-  height:49px;
-  position:absolute;
-  top:-1px;
+  .work-together-submit {
+    width: 173px;
+  }
 }
