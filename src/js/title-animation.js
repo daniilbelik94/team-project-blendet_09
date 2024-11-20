@@ -39,8 +39,8 @@ document.addEventListener('DOMContentLoaded', e => {
       tl.from(element.querySelectorAll('.char'), {
         opacity: 0,
         duration: 0.5, // Увеличил продолжительность для более плавного появления
-        ease: 'expo.out', // Изменил на более мягкий "expo.out"
-        stagger: { amount: 1.2, from: 'start' }, // Немного увеличил time stagger
+        ease: 'expo.in', // Изменил на более мягкий "expo.out"
+        stagger: { amount: 0.8, from: 'start' }, // Немного увеличил time stagger
       });
       createScrollTrigger(element, tl);
     });
