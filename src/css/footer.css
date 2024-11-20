@@ -22,7 +22,9 @@
   .footer-social-link:focus {
     color: var(--accet-green);
   }
-  
+  .footer-logo {
+    margin-bottom: 32px;
+  }
   .copyright {
     margin: 0 auto;
     width: 200px;
