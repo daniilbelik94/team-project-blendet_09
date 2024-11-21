@@ -41,12 +41,12 @@
 
 .horizontal-list {
   display: flex;
-  animation: marquee 45s linear infinite;
+  animation: marque 80s linear infinite;
 }
 
 .diagonal-list {
   display: flex;
-  animation: marquee 45s linear infinite;
+  animation: marquee 80s linear infinite;
   color: var(--accent-green);
   position: relative;
 }
@@ -115,6 +115,27 @@
   to {
     transform: translateX(-100%);
   }
+  
+}
+@keyframes marque {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(-100%) ;
+  }
+}
+
+@keyframes marque {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+  
 }
 
 /* ========================== TABLET STYLES ========================== */
