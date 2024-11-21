@@ -10,7 +10,10 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
+.tech-skills-container {
+  padding: 0;
+  margin: 0;
+}
 /* ========================== MOBILE STYLES ========================== */
 
 .marquee-section {
@@ -38,12 +41,12 @@
 
 .horizontal-list {
   display: flex;
-  animation: marquee 20s linear infinite;
+  animation: marquee 45s linear infinite;
 }
 
 .diagonal-list {
   display: flex;
-  animation: marquee 20s linear infinite;
+  animation: marquee 45s linear infinite;
   color: var(--accent-green);
   position: relative;
 }
