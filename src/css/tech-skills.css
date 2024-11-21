@@ -99,20 +99,21 @@
 
 @keyframes marquee {
   from {
-    transform: translateX(50%);
+    transform: translateX(5%);
   }
 
   to {
     transform: translateX(-100%) ;
   }
 };
+
 @keyframes marque {
   from {
-    transform: translateX(-50%);
+    transform: translateX(5%);
   }
 
   to {
-    transform: translateX(100%) ;
+    transform: translateX(-100%) ;
   }
 }
 
