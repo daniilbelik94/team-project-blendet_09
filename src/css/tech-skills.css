@@ -1,118 +1,127 @@
-.tape-container {
-  width: 100%;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.horizontal-container {
-  max-width: 1500px;
-  overflow-y: hidden;
-  position: absolute;
-  z-index: 2;
-  padding: 32px 0px;
-  height: 128px;
-  background: var(--light-accent);
+
+/* ========================== MOBILE STYLES ========================== */
+
+.marquee-section {
+  overflow: hidden;
 }
-.diagonal-container {
-  z-index: 1;
-  padding: 32px 0px;
-  height: 104px;
-  background: var(--light-grey);
-  transform: rotate(2deg);
-}
-.tape {
+
+.horizontal {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  white-space: nowrap;
-  animation: marquee 15s linear infinite;
+  background-color: var(--light-accent);
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+
 }
+
+.diagonal {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  background-color: var(--light-grey);
+  transform: rotate(2deg);
+  z-index: 2;
+}
+
+
 .horizontal-list {
   display: flex;
-  align-items: center;
-  gap: 50px;
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 125%;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  color: var(--text);
+  animation: marquee 20s linear infinite;
 }
-.horizontal-list li {
-  position: relative;
-}
-.horizontal-list li::before {
-  content: '';
-  position: absolute;
-  display: inline-block;
-  top: 19px;
-  left: -30px;
-  width: 8px;
-  height: 8px;
-  border-radius: 2px;
-  background: var(--accent-green);
-  margin-right: 24px;
-}
+
 .diagonal-list {
   display: flex;
-  align-items: center;
-  font-family: var(--font-family);
-  font-weight: 500;
-  font-size: 32px;
-  gap: 50px;
-  line-height: 125%;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  color: var(--accet-green);
-}
-.diagonal-list li {
+  animation: marquee 20s linear infinite;
+  color: var(--accent-green);
   position: relative;
 }
-.diagonal-list li::before {
+
+.horizontal-list li {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  padding: 32px 24px;
+  white-space: nowrap;
+  position: relative;
+}
+
+.horizontal-list li::after {
   content: '';
   position: absolute;
-  top: 19px;
-  left: -24px;
-  display: inline-block;
+  top: 45%;
+  border-radius: 20%;
+  left: -5px;
   width: 8px;
   height: 8px;
-  border-radius: 2px;
-  background: var(--text);
-  margin-right: 24px;
+  background-color: var(--accent-green);
 }
-.dark-theme .diagonal-list {
-  color: var(--accent-green);
+.type-two {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  padding: 32px 24px;
+  white-space: nowrap;
+  position: relative;
 }
+
+.type-two::after {
+  content: '';
+  position: absolute;
+  top: 45%;
+  border-radius: 20%;
+  left: -5px;
+  width: 8px;
+  height: 8px;
+  background-color: var(--text);
+  color: var(--text);
+}
+
 @keyframes marquee {
-  0% {
+  from {
     transform: translateX(100%);
   }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-@media screen and (min-width: 768px) {
-  .diagonal-container {
-    max-width: 1500px;
-    overflow-y: hidden;
-    position: absolute;
-    top: 200px;
-    padding: 40px 0px;
-    height: 128px;
-  }
-  .horizontal-list {
-    font-size: 36px;
-    line-height: 133%;
-    letter-spacing: 0.01em;
-    text-transform: uppercase;
-  }
-  .diagonal-list {
-    font-size: 36px;
-    line-height: 133%;
-    letter-spacing: 0.01em;
+
+  to {
+    transform: translateX(-100%) ;
   }
 }
 
-@media screen and (min-width: 1280px) {
-  .marquee-section {
-    margin-bottom: 164px;
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* ========================== TABLET STYLES ========================== */
+
+@media screen and (min-width: 768px) {
+  .type-two,
+  .horizontal-list li {
+    font-size: 36px;
+    line-height: 1.33;
+    letter-spacing: 0.01em;
+    padding: 40px 24px;
   }
 }
