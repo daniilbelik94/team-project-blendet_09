@@ -1,0 +1,118 @@
+.tape-container {
+  width: 100%;
+  overflow: hidden;
+}
+.horizontal-container {
+  max-width: 1500px;
+  overflow-y: hidden;
+  position: absolute;
+  z-index: 2;
+  padding: 32px 0px;
+  height: 128px;
+  background: var(--light-accent);
+}
+.diagonal-container {
+  z-index: 1;
+  padding: 32px 0px;
+  height: 104px;
+  background: var(--light-grey);
+  transform: rotate(2deg);
+}
+.tape {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  white-space: nowrap;
+  animation: marquee 15s linear infinite;
+}
+.horizontal-list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--text);
+}
+.horizontal-list li {
+  position: relative;
+}
+.horizontal-list li::before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  top: 19px;
+  left: -30px;
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  background: var(--accent-green);
+  margin-right: 24px;
+}
+.diagonal-list {
+  display: flex;
+  align-items: center;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 32px;
+  gap: 50px;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--accet-green);
+}
+.diagonal-list li {
+  position: relative;
+}
+.diagonal-list li::before {
+  content: '';
+  position: absolute;
+  top: 19px;
+  left: -24px;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  background: var(--text);
+  margin-right: 24px;
+}
+.dark-theme .diagonal-list {
+  color: var(--accent-green);
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@media screen and (min-width: 768px) {
+  .diagonal-container {
+    max-width: 1500px;
+    overflow-y: hidden;
+    position: absolute;
+    top: 200px;
+    padding: 40px 0px;
+    height: 128px;
+  }
+  .horizontal-list {
+    font-size: 36px;
+    line-height: 133%;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+  }
+  .diagonal-list {
+    font-size: 36px;
+    line-height: 133%;
+    letter-spacing: 0.01em;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .marquee-section {
+    margin-bottom: 164px;
+  }
+}
