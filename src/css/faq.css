@@ -29,20 +29,6 @@
   background-color: inherit;
 }
 
-.faq-title {
-  font-family: var(--second-family);
-  font-weight: 400;
-  font-size: 52px;
-  line-height: 123%;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--black);
-  max-width: 320px;
-}
-
-.faq-title-accent {
-  color: var(--accent-green);
-}
 
 .accordion-container {
   display: flex;
@@ -95,9 +81,11 @@
   margin: auto;
   width: 24px;
   height: 24px;
-  transition: transform 0.3s ease;
   transform-origin: center;
-  fill: var(--black);
+  fill: transparent;
+  stroke: var(--text);
+  transition: transform 600ms;
+  stroke-linecap: round;
 }
 
 #ac.is-active .faq-svg,
@@ -203,9 +191,9 @@
   }
 
   .bgr-img {
-    background-image: url(/img/faq_decor.png);
+    background-image: url(../img/faq/decor-bg-4-min.png);
     background-repeat: no-repeat;
-    background-position: bottom left;
+    background-position: bottom 240px left 32px;
   }
 }
 
