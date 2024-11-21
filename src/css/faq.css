@@ -149,6 +149,15 @@
     width: 600px;
     max-width: none;
   }
+  .bgr-img {
+    max-width: 1280px;
+    margin: 0 auto;
+    background-image: url(../img/faq/decor-bg-4-min.png);
+    background-repeat: no-repeat;
+    background-position: bottom 180px  left 32px;
+    background-size:auto;
+
+  }
 
   .accordion-container {
     row-gap: 8px;
@@ -190,11 +199,7 @@
     width: 488px;
   }
 
-  .bgr-img {
-    background-image: url(../img/faq/decor-bg-4-min.png);
-    background-repeat: no-repeat;
-    background-position: bottom 240px left 32px;
-  }
+  
 }
 
 #ac.ac-dt,
