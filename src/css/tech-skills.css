@@ -1,33 +1,23 @@
-.marquee-section {
-  margin-bottom: 80px;
-  position: relative;
-  height: 244px;
-  animation-timing-function: ease-in-out;
-}
-
 .tape-container {
-  position: absolute;
   width: 100%;
   overflow: hidden;
 }
-
 .horizontal-container {
+  max-width: 1500px;
+  overflow-y: hidden;
+  position: absolute;
   z-index: 2;
   padding: 32px 0px;
-  width: 1392px;
-  height: 104px;
+  height: 128px;
   background: var(--light-accent);
 }
-
 .diagonal-container {
   z-index: 1;
   padding: 32px 0px;
-  width: 1392px;
   height: 104px;
   background: var(--light-grey);
   transform: rotate(2deg);
 }
-
 .tape {
   display: flex;
   justify-content: flex-start;
@@ -35,69 +25,62 @@
   white-space: nowrap;
   animation: marquee 15s linear infinite;
 }
-
 .horizontal-list {
-  position: relative;
   display: flex;
   align-items: center;
-  font-family: var(--font-family);
+  gap: 50px;
   font-weight: 500;
   font-size: 32px;
   line-height: 125%;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  color: var(--black);
+  color: var(--text);
 }
-
-.dark-theme .horizontal-list {
-  color: white;
+.horizontal-list li {
+  position: relative;
 }
-
-.dark-theme .horizontal-list ::before {
-  color: var(--accent-green);
-}
-
-.horizontal-list ::before {
+.horizontal-list li::before {
   content: '';
+  position: absolute;
   display: inline-block;
+  top: 19px;
+  left: -30px;
   width: 8px;
   height: 8px;
   border-radius: 2px;
   background: var(--accent-green);
   margin-right: 24px;
 }
-
 .diagonal-list {
-  position: relative;
   display: flex;
   align-items: center;
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 32px;
+  gap: 50px;
   line-height: 125%;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: var(--accet-green);
 }
-
-.diagonal-list ::before {
+.diagonal-list li {
+  position: relative;
+}
+.diagonal-list li::before {
   content: '';
+  position: absolute;
+  top: 19px;
+  left: -24px;
   display: inline-block;
   width: 8px;
   height: 8px;
   border-radius: 2px;
-  background: black;
+  background: var(--text);
   margin-right: 24px;
 }
-
 .dark-theme .diagonal-list {
   color: var(--accent-green);
 }
-
-.dark-theme .diagonal-list ::before {
-  background: white;
-}
-
 @keyframes marquee {
   0% {
     transform: translateX(100%);
@@ -106,32 +89,21 @@
     transform: translateX(-100%);
   }
 }
-
 @media screen and (min-width: 768px) {
-  .marquee-section {
-    margin-bottom: 124px;
-    height: 280px;
-  }
-
-  .horizontal-container {
-    padding: 40px 0px;
-    width: 1517px;
-    height: 128px;
-  }
-
   .diagonal-container {
+    max-width: 1500px;
+    overflow-y: hidden;
+    position: absolute;
+    top: 200px;
     padding: 40px 0px;
-    width: 1517px;
     height: 128px;
   }
-
   .horizontal-list {
     font-size: 36px;
     line-height: 133%;
     letter-spacing: 0.01em;
     text-transform: uppercase;
   }
-
   .diagonal-list {
     font-size: 36px;
     line-height: 133%;
