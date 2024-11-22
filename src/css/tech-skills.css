@@ -26,7 +26,6 @@
   overflow: hidden;
   position: relative;
   z-index: 1;
-
 }
 
 .diagonal {
@@ -35,9 +34,8 @@
   overflow: hidden;
   background-color: var(--light-grey);
   transform: rotate(2deg);
-  z-index: 2;
+  z-index: 0;
 }
-
 
 .horizontal-list {
   display: flex;
@@ -103,9 +101,9 @@
   }
 
   to {
-    transform: translateX(-100%) ;
+    transform: translateX(-100%);
   }
-};
+}
 
 @keyframes marque {
   from {
@@ -113,13 +111,9 @@
   }
 
   to {
-    transform: translateX(-100%) ;
+    transform: translateX(-100%);
   }
 }
-
-
-  
-
 
 /* ========================== TABLET STYLES ========================== */
 
