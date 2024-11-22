@@ -39,12 +39,13 @@
 
 .horizontal-list {
   display: flex;
-  animation: marque 80s linear infinite;
+  animation: marque 50s linear infinite;
 }
 
 .diagonal-list {
   display: flex;
-  animation: marquee 80s linear infinite;
+  animation: marquee 50s linear infinite;
+  
   color: var(--accent-green);
   position: relative;
 }
@@ -97,17 +98,19 @@
 
 @keyframes marquee {
   from {
-    transform: translateX(5%);
+    transform: translateX(-100%);
   }
 
   to {
-    transform: translateX(-100%);
+
+    transform: translateX(0%) ;
+
   }
 }
 
 @keyframes marque {
   from {
-    transform: translateX(5%);
+    transform: translateX(0%);
   }
 
   to {
