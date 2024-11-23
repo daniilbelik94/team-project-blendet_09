@@ -120,7 +120,6 @@ padding: 32px 0px;
 }
 
 
-
 @media screen and (min-width: 768px){
 .hero-content {
 background-image: url('/img/hero/hero-decor-bg-1-tab.png'),
@@ -186,7 +185,7 @@ background-position: top right, top 350px left 210px;
 display: flex;
 justify-content: space-between;
 padding: 168px 0 116px;
-      }
+    }
 
 .hero-first-part {
 display: flex;
@@ -213,7 +212,6 @@ display: block;
 margin-left: 40px;
 border-radius: 16px; 
 }
-
 
 .hero-link {
 margin-left: 76px;
