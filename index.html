@@ -10,42 +10,34 @@
   <script type="module" crossorigin src="/team-project-blendet_09/index.js"></script>
   <link rel="modulepreload" crossorigin href="/team-project-blendet_09/assets/vendor-BBS8Dfhk.js">
   <link rel="stylesheet" crossorigin href="/team-project-blendet_09/assets/vendor-BSOEtDFN.css">
-  <link rel="stylesheet" crossorigin href="/team-project-blendet_09/assets/index-C2d_TDU2.css">
+  <link rel="stylesheet" crossorigin href="/team-project-blendet_09/assets/index-DhNL8-ok.css">
 </head>
 
 <body>
     <!-- Header Roman Belyaev -->
     <header class="header">
   <div class="container header-container">
-    <!-- логотип -->
-    <p class="header-logo">
-      <a href="./index.html">Lloyd<span>Jefferson.</span></a>
-    </p>
-
-    <!-- темная/светлая тема -->
-    <input type="checkbox" class="theme-checkbox" id="change-theme" />
+    <p class="header-logo">Lloyd<span>Jefferson.</span></p>
+    <input type="checkbox" class="header-theme-checkbox theme-checkbox" id="change-theme" />
     <label for="change-theme" class="visually-hidden">Change theme</label>
-
-    <nav class="page-navigation">
-      <ul class="menu-navigation">
-        <li class="menu-item">
-          <a class="link-hover" href="#about-me">About me</a>
+    <nav class="header-navigation">
+      <ul class="header-list">
+        <li class="header-item">
+          <a href="#about" class="link-hover footer-social-link">About me</a>
         </li>
-        <li class="menu-item">
-          <a class="link-hover" href="#my-projects">Projects</a>
+        <li class="header-item">
+          <a href="#my-projects" class="link-hover footer-social-link">Projects</a>
         </li>
-        <li class="menu-item">
-          <a class="link-hover" href="#contacts">Contacts</a>
+        <li class="header-item">
+          <a href="#contacts" class="link-hover footer-social-link">Contacts</a>
         </li>
-        <li class="btn"><a href="#">ORDER THE PROJECT</a></li>
       </ul>
-    
-    <button class="open-menu-btn" type="button" href="#contacts">
-      <span class="visually-hidden">Open menu</span>
-      <svg class="icon-open-menu" width="32" height="32">
-        <use href="../img/sprite.svg#icon-burger"></use>
-      </svg>
-    </button>
+      <button type="button" class="open-menu-btn">
+        <span class="visually-hidden">Open menu</span>
+        <svg class="icon-open-menu" width="32" height="32">
+          <use href="/team-project-blendet_09/assets/sprite-CMHK1lie.svg#icon-burger"></use>
+        </svg>
+      </button>
     </nav>
   </div>
   <div class="mob-menu-container">
@@ -60,19 +52,18 @@
     </nav>
     <ul class="mob-menu-list">
       <li class="mob-menu-item">
-        <a href="#about" class="link-hover">About me</a>
+        <a href="#about-me" class="link-hover social-link">About me</a>
       </li>
       <li class="mob-menu-item">
-        <a href="#my-projects" class="link-hover">Projects</a>
+        <a href="#my-projects" class="link-hover social-link">Projects</a>
       </li>
       <li class="mob-menu-item">
-        <a href="#contacts" class="link-hover">Contacts</a>
+        <a href="#contacts" class="link-hover social-link">Contacts</a>
       </li>
+
     </ul>
   </div>
 </header>
-
-
     <main>
         <!-- Section Hero Tetiana Korkh -->
         <section class="section hero-section" id="hero">
