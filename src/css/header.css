@@ -111,3 +111,31 @@
   }
 }
 /*================ TABLET HEADER STYLES================*/
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 1279px;
+  }
+
+  .menu-navigation {
+    display: flex;
+    gap: 40px;
+    margin-left: 156px;
+  }
+  .theme-checkbox {
+    display: none;
+  }
+  .mobile-menu-open-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+  }
+  .mobile-menu-open-btn-icon {
+    display: none;
+  }
+  .btn {
+    display: none;
+  }
+}
+
+/*================/ TABLET HEADER STYLES================*/
