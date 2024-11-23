@@ -240,4 +240,11 @@ padding-bottom: 0;
 }
     
 }
+@media screen and (max-width: 339px) {
+
+  .hero-link::after {
+    
+    width: 125px;
+}
+}
 

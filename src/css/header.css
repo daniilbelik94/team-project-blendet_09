@@ -6,88 +6,6 @@
   align-items: center;
   justify-content: space-between;
 }
-.header-logo {
-  font-family: 'Impact', sans-serif;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 1;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--text);
-}
-
-.header-logo span {
-  color: var(--accent-green);
-}
-/* Theme checkbox  */
-/* dont tuch it! */
-
-.theme-checkbox::before,
-.theme-checkbox::after {
-  content: '';
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  top: 2px;
-  left: 2px;
-  border-radius: 50%;
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.theme-checkbox::before {
-  background-color: #2a2d32;
-  opacity: 0;
-}
-.theme-checkbox::after {
-  background-color: #00b068;
-}
-.theme-checkbox:checked {
-  background-color: #2a2d32;
-}
-.theme-checkbox:checked::before {
-  transform: translateX(calc(80%));
-  background-color: #2a2d32;
-  opacity: 1;
-  z-index: 10;
-}
-.theme-checkbox:checked::after {
-  transform: translateX(calc(100% + 3px));
-}
-
-.theme-checkbox {
-  /* Стили чекбокса */
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  position: relative;
-  width: 48px;
-  height: 24px;
-  cursor: pointer;
-  background-color: #e4e5e6;
-  border-radius: 16px;
-  transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  z-index: 1;
-}
-
-@media screen and (min-width: 768px) {
-  .theme-checkbox {
-    margin: 0 auto;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .theme-checkbox {
-    margin: 0 auto;
-  }
-}
-/* Пиши стили для хеддера и мобильного меню после этого комментария */
-.header {
-  padding: 20px 0;
-}
-.header-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 
 .header-navigation {
   display: flex;
@@ -165,6 +83,32 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+.social-link-header:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px;
+    width: 100%;
+    background-color: #00B068;
+    border-radius: 5px 5px 0 0;
+    transform: scaleX(0); 
+    transform-origin: left; 
+    transition: transform 0.40s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-link-header:hover:after {
+    transform: scaleX(0.75);
+}
+
+
+  
+  .social-link-header:hover,
+  .social-link-header:focus {
+    color: var(--accent-green);
+    transition: color 0.25s ease-in-out;
+
+  }
 
 .close-menu-btn {
   border: none;
@@ -254,4 +198,15 @@
   .theme-checkbox {
     margin: 0 40px 0 auto;
   }
+}
+
+
+@media screen and (max-width: 339px) {
+  .theme-checkbox {
+    display: none;
+  }
+  .hero-link::after {
+    
+    width: 125px;
+}
 }
