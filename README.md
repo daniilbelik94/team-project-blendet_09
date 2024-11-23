@@ -40,8 +40,10 @@
 Цей проєкт є результатом спільних зусиль нашої талановитої команди:
 
 - **Team Lead**: [Daniil Belik](https://github.com/daniilbelik94) | Section: Work together;
+- **Scrum Master**: [Olga Riabuha](https://github.com/Olya-rar) | Section: My Projects;
 - **Front-End Developer**: [Roman Belyaev]( https://github.com/Plane-Jumper5) | Section: Header ;
 - **Front-End Developer**: [Tetiana Korkh](https://github.com/Tetiana1104) | Section: Hero;
+- **Front-End Developer**: [Vlad Zhelevskyi](https://github.com/vladjelevsky) | Section: Benefits;
 - **Front-End Developer**: [Svitlana Fedorova](https://github.com/lana150) | Section: About Me;
 - **Front-End Developer**: [Sveta Palyh](https://github.com/Svetakler) | Section: Tech Skills;
 - **Front-End Developer**: [Oleksandra Voronkina](https://github.com/Alexandra0707) | Section: FAQ;
