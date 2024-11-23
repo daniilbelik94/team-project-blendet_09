@@ -1,0 +1,177 @@
+.about-title {
+    font-family: var(--second-family);
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 1.23077;
+    letter-spacing: 0.03em;
+    text-align: left;
+    margin-bottom: 40px;
+    grid-area: title;
+}
+
+.about-span {
+    color: #00b068;
+}
+
+.bio {
+    margin-top: 40px;
+    grid-area: bio;
+}
+
+.education {
+    margin-top: 40px;
+    grid-area: education;
+}
+
+.education-list,
+.role-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 12px;
+    list-style: disc;
+    padding-left: 32px;
+}
+
+.role {
+    margin-top: 40px;
+    grid-area: role;
+}
+
+.role-list {
+    padding-left: 32px;
+}
+
+.about-item-title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+.about-text {
+    letter-spacing: 0.03em;
+    margin: 10px 0;
+}
+
+.about-text-point {
+    color: var(--black);
+}
+
+.about-text-point:not(:last-child) {
+    letter-spacing: 0.03em;
+    margin-bottom: 12px;
+}
+
+.about-text-point:last-child {
+    letter-spacing: 0.03em;
+}
+
+.about-foto {
+    border-radius: 4%;
+    grid-area: image;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        'title'
+        'image'
+        'bio'
+        'education'
+        'role';
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+
+    .about-title {
+        font-weight: 400;
+        font-size: 108px;
+        line-height: 1.14815;
+        letter-spacing: 0.02em;
+    }
+
+    .about-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            'title title'
+            'image bio'
+            'education role';
+        column-gap: 32px;
+        position: relative;
+    }
+
+    .about-foto {
+        margin-top: 400px;
+    }
+
+    .bio {
+        margin-top: 0;
+    }
+
+    .bio .about-text {
+        margin-top: 0;
+    }
+
+    .about-item-title {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 1.33333;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+    }
+
+    .education {
+        margin-top: 60px;
+    }
+
+    .role {
+        position: relative;
+        margin-top: 60px;
+    }
+
+    .about-me-background-img {
+        background-image: url(/img/about/about-decore-bg-tab-1x.png);
+        background-repeat: no-repeat;
+        background-position: bottom 13.7% right 7%;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .container {
+        width: 1280px;
+    }
+
+    .about-container {
+        column-gap: 136px;
+    }
+
+    .about-foto {
+        margin-top: 272px;
+    }
+
+    .bio {
+        margin-top: 0;
+    }
+
+    .education {
+        margin-top: 80px;
+    }
+
+    .role {
+        margin-top: 80px;
+    }
+
+    .about-me-background-img {
+        background-image: url(../img/about/about-decore-bg-1x.png);
+        background-size: 384px 288px;
+        background-repeat: no-repeat;
+        background-position: bottom 23% right 10%;
+    }
+}
