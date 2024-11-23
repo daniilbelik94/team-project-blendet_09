@@ -24,7 +24,7 @@ const renderProjects = (startIndex, numProjects) => {
       <p class="projects-item-skills">${project.skills}</p>
       <div class="projects-item-bottom">
         <h3 class="projects-item-title">${project.title}</h3>
-        <a href="https://github.com/Vikto0004/browser-battalion-2.0" target="_blank" class="projects-item-btn">
+        <a href="https://github.com/daniilbelik94/team-project-blendet_09" target="_blank" class="projects-item-btn">
           VISIT
           <svg class="projects-item-btn-icon">
             <use href="${spriteUrl}#icon-arrow-visit"></use>
