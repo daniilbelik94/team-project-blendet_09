@@ -1,6 +1,6 @@
 .about-section {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 80px;
+    padding-bottom:80px;
 }
 
 .about-title {
@@ -92,8 +92,8 @@
 @media screen and (min-width: 768px) {
     .about-section {
         max-width: 100%;
-        height: 1388px;
     }
+
 
     .about-container {
         width: 768px;
@@ -182,7 +182,7 @@
 
 @media screen and (min-width: 1280px) {
     .about-section {
-        height: 1408px;
+        padding: 164px 0px;
     }
 
     .about-container {
