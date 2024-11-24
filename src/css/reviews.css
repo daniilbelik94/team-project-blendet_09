@@ -1,6 +1,4 @@
-.reviews {
-  padding-top: 80px;
-}
+
 
 .reviews-title {
   font-family: 'Impact', sans-serif;
@@ -19,11 +17,16 @@
 }
 
 .reviews-text {
+  
   margin-bottom: 24px;
   height: 168px;
   overflow: auto;
 }
-
+.reviews-swiper-slide {
+  padding: 32px;
+  border-radius: 16px;
+  background: var(--Charcoal-DT, #2A2D32);
+}
 .reviews-text::-webkit-scrollbar {
   display: block;
   width: 4px;
@@ -76,6 +79,14 @@
   transition: background-color 0.3s ease, opacity 0.3s ease,
     border-color 0.3s ease;
 }
+.reviews-prev-btn:hover,
+.reviews-next-btn:focus,
+.reviews-next-btn:hover,
+.reviews-prev-btn:focus {
+  transition: border-color 0.3s ease;
+  border-color: var(--green-hero-hover);
+}
+.reviews-next-btn 
 
 .reviews-prev-btn.disabled,
 .reviews-next-btn.disabled,
@@ -92,16 +103,21 @@
   background-color: var(--main-bcg);
 }
 
-.reviews-prev-btn:hover,
-.reviews-prev-btn:focus,
-.reviews-next-btn:hover,
-.reviews-next-btn:focus {
-  border: 1px solid #fff;
-}
+
 
 .reviews-button-icon {
-  stroke: var(--main-cl);
-  fill: none;
+  stroke: #F0F0F0;
+  transition: stroke 0.3s ease;
+
+}
+.reviews-button-icon-left {
+  transform: rotate(180deg);
+}
+.reviews-button-icon:hover,
+.reviews-button-icon:focus {
+  transition: stroke 0.3s ease;
+  stroke: var(--green-hero-hover);
+ 
 }
 
 .reviews-info-author {
@@ -113,10 +129,9 @@
   font-weight: 600;
 }
 
+
+
 @media screen and (min-width: 768px) {
-  .reviews {
-    padding-top: 124px;
-  }
 
   .reviews-title {
     font-weight: 400;
@@ -127,25 +142,7 @@
 
   .reviews-text {
     height: 120px;
-    margin-bottom: 0;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .reviews {
-    padding-top: 124px;
-  }
-
-  .reviews-title {
-    font-weight: 400;
-    font-size: 108px;
-    line-height: 1.14;
-    margin-bottom: 60px;
-  }
-
-  .reviews-text {
-    height: 120px;
-    margin-bottom: 0;
+    margin-bottom: 24px;
   }
 }
 
@@ -155,9 +152,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .reviews {
-    padding-top: 124px;
-  }
+
   .reviews-title {
     font-weight: 400;
     font-size: 108px;
@@ -167,7 +162,5 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .reviews {
-    padding-top: 164px;
-  }
+
 }

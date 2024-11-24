@@ -66,7 +66,7 @@ function initSwiper() {
   new Swiper('.swiper-reviews', {
     modules: [Navigation, Keyboard],
     slidesPerView: 1,
-    spaceBetween: 20,
+    spaceBetween: 32,
     navigation: {
       nextEl: '.reviews-next-btn',
       prevEl: '.reviews-prev-btn',
@@ -80,6 +80,17 @@ function initSwiper() {
       nextSlideMessage: 'Next slide',
     },
     allowTouchMove: true,
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      // Если ширина экрана меньше или равна 768px
+
+      // Если ширина экрана больше 768px
+      1280: {
+        slidesPerView: 2, // Показать два слайда
+      }
+    }
   });
 }
 
