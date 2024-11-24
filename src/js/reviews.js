@@ -84,11 +84,8 @@ function initSwiper() {
       320: {
         slidesPerView: 1,
       },
-      // Если ширина экрана меньше или равна 768px
-
-      // Если ширина экрана больше 768px
       1280: {
-        slidesPerView: 2, // Показать два слайда
+        slidesPerView: 2,
       }
     }
   });
