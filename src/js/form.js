@@ -3,7 +3,6 @@
 import axios from 'axios';
 import iziToast from 'izitoast';
 
-
 const form = document.querySelector('.work-together-form');
 const input = document.querySelector('.work-together-input');
 const message = document.querySelector('.work-together-message');
@@ -14,24 +13,28 @@ const close = document.querySelector('.work-together-close');
 const backdrop = document.querySelector('.work-together-backdrop');
 const loader = document.querySelector('.work-together-loader');
 
-close.addEventListener('click', () => {
+// Открытие модального окна
+const openModal = () => {
+  backdrop.classList.add('is-open');
+  document.body.classList.add('no-scroll'); // Отключение прокрутки
+};
+
+// Закрытие модального окна
+const closeModal = () => {
   backdrop.classList.remove('is-open');
-  document.body.style.overflow = 'auto';
-});
+  document.body.classList.remove('no-scroll'); // Включение прокрутки
+};
+
+close.addEventListener('click', closeModal);
 
 window.addEventListener('keydown', e => {
-  if (e.key === 'Escape') {
-    backdrop.classList.remove('is-open');
-    document.body.style.overflow = 'auto';
-  }
+  if (e.key === 'Escape') closeModal();
 });
 
 backdrop.addEventListener('click', e => {
-  if (e.target === e.currentTarget) {
-    backdrop.classList.remove('is-open');
-    document.body.style.overflow = 'auto';
-  }
+  if (e.target === e.currentTarget) closeModal();
 });
+
 
 const checkEmail = () => {
   if (input.validity.valid) {
@@ -50,50 +53,48 @@ input.addEventListener('input', checkEmail);
 form.addEventListener('submit', e => {
   e.preventDefault();
 
+
   if (input.value.trim() === '') {
     errorInput.style.display = 'block';
-    errorInput.textContent = 'the field must be filled';
+    errorInput.textContent = 'The field must be filled';
+    return;
   }
 
   if (message.value.trim() === '') {
     errorMessage.style.display = 'block';
-  } else {
-    errorMessage.style.display = 'none';
+    return;
   }
 
-  if (input.value.trim() !== '' && message.value.trim() !== '') {
-    loader.classList.remove('is-hide');
+  errorInput.style.display = 'none';
+  errorMessage.style.display = 'none';
 
-    axios
-      .post('https://portfolio-js.b.goit.study/api/requests', {
-        email: input.value,
-        comment: message.value,
-      })
-      .then(res => {
-        loader.classList.add('is-hide');
-        backdrop.classList.add('is-open');
-        elScrollBtn.classList.remove('is-active-scroll');
-        document.body.style.overflow = 'hidden';
+  loader.classList.remove('is-hide');
 
-        const title = document.querySelector('.work-together-modal-title');
-        const text = document.querySelector('.work-together-modal-text');
+  axios
+    .post('https://portfolio-js.b.goit.study/api/requests', {
+      email: input.value,
+      comment: message.value,
+    })
+    .then(res => {
+      loader.classList.add('is-hide');
+      openModal();
 
-        title.textContent = res.data.title;
-        text.textContent = res.data.message;
+      const title = document.querySelector('.work-together-modal-title');
+      const text = document.querySelector('.work-together-modal-text');
 
-        errorInput.style.display = 'none';
-        errorMessage.style.display = 'none';
-        success.style.display = 'none';
-        form.reset();
-      })
-      .catch(error => {
-        loader.classList.add('is-hide');
+      title.textContent = res.data.title;
+      text.textContent = res.data.message;
 
-        iziToast.error({
-          title: 'Error',
-          message: error.message,
-          position: 'center',
-        });
+      // refresch the form after submit
+      form.reset();
+      success.style.display = 'none';
+    })
+    .catch(error => {
+      loader.classList.add('is-hide');
+      iziToast.error({
+        title: 'Error',
+        message: error.message,
+        position: 'center',
       });
-  }
+    });
 });
