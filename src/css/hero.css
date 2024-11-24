@@ -111,6 +111,11 @@ color: var(--accent-green);
 }
 
 .hero-social-list {
+position: relative;
+left: 50%;
+right: 50%;
+width: 100vw;
+margin-left: -50vw;
 background-color: var(--light-grey);
 display: flex;
 flex-direction: column;
@@ -118,6 +123,7 @@ align-items: center;
 gap: 24px;
 padding: 32px 0px;
 }
+
 
 
 @media screen and (min-width: 768px){
