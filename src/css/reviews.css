@@ -25,7 +25,7 @@
 .reviews-swiper-slide {
   padding: 32px;
   border-radius: 16px;
-  background: var(--Charcoal-DT, #2A2D32);
+  background: var(--light-grey);
 }
 .reviews-text::-webkit-scrollbar {
   display: block;
