@@ -123,7 +123,8 @@
         url('../img/together/decor-lapt.png') 1x,
         url('../img/together/decor-lapt2x.png') 2x
       );
-      margin-top: -100px;
+      margin-top: -110px;
+      margin-left: -20px;
     }
   
     .benefits-title-box {
@@ -136,7 +137,7 @@
     }
   
     .benefits-list-container {
-      margin-top: 120px;
+      margin-top: 140px;
     }
     .benefits-item {
       width: calc((100% - 64px) / 3);
