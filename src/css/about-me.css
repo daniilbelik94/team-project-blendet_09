@@ -133,6 +133,7 @@
     .text-one {
         max-width: 336px;
         height: 264px;
+        margin-bottom: 0;
     }
 
     .text-two {
