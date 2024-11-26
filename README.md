@@ -49,7 +49,7 @@
 - **Front-End Developer**: [Oleksandra Voronkina](https://github.com/Alexandra0707) | Section: FAQ;
 - **Front-End Developer**: [Anzhelika Kondakova](https://github.com/anzheliketta) | Section: Reviews;
 - **Front-End Developer**: [Bohdana Skolzaieva](https://github.com/Bohdana-Skolzaieva-3101) | Section: Footer;
-- **Front-End Developer**: [Vlad Kiriluk](https://github.com/Bohdana-Skolzaieva-3101) | Section: Scroll-up;
+- **Front-End Developer**: [Vlad Kiriluk](https://github.com/ender179) | Section: Scroll-up;
 
 # Технологічний стек
 Фронтенд: HTML, CSS, JavaScript;
