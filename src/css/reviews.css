@@ -74,7 +74,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: transparent;
+  background: transparent;
+  transition: background-color 0.3s ease;
 }
 
 
@@ -98,6 +99,9 @@
 
 .reviews-item-subtitle {
   font-weight: 600;
+}
+.swiper-button-disabled {
+  opacity: 0.3;
 }
 
 
@@ -133,11 +137,20 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 48px !important;
+    height: 48px !important;
+    transition: background 0.4s ease;
+    outline: none;
+    cursor: pointer;
+  }
     
-  .swiper-button-next:focus,
-  .swiper-button-prev:focus,
-  .swiper-button-next:hover,
-  .swiper-button-prev:hover {
-    background-color: var(--light-grey);
+  .reviews-next-btn:hover,
+  .reviews-next-btn:focus,
+  .reviews-prev-btn:focus,
+  .reviews-prev-btn:hover {
+    background: var(--light-grey);
+    transition: background-color 0.3s ease;
   }
 }
