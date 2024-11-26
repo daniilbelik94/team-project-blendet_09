@@ -6,6 +6,7 @@ import './js/form.js';
 import './js/accordion.js';
 import './js/scroll-up.js';
 import './js/title-animation.js';
+import './js/scroll-up.js';
 
 
 
